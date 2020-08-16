@@ -1,7 +1,7 @@
-*******************************************************************************
-                         The Mars Rovers Problem
-*******************************************************************************
-                             Installation
+*****************************************************************************************
+                             The Mars Rovers Problem
+*****************************************************************************************
+                               Debian Installation 
 
 This solution for "The Mars Rovers Problem" has been programmed in Python3. 
 If you don't have Python installed, please run: 
@@ -12,26 +12,26 @@ In order tu run the GUI you will need to intall the Tkinter library:
  
  		apt-get install python3-tk
 
-*******************************************************************************
-                           Running the app             
-*******************************************************************************
+******************************************************************************************
+                                 Running the app             
+******************************************************************************************
 
  To start the app please run main.py from the root project folder using the 
  following flags:
 
    1st FLAG (required)  "-f inputFileName"    => To provide the input 
-       Example ../somelocalpath/MarsRovers/$ python3 -f input.txt       
+    Example ../somelocalpath/MarsRovers/$ python3 main.py -f /src/inputs/input_example_ok       
  
    2nd FLAG (optional)  "-g"                  => If you want to display the GUI
-       Example ../somelocalpath/MarsRovers/$ python3 -f input.txt -g     
+    Example ../somelocalpath/MarsRovers/$ python3 main.py -f /src/inputs/input_example_ok -g
  
- ******************************************************************************
+ *******************************************************************************************
 
  After running it, you can analyze the rovers movements in the plateau by 
  looking at the file 'marsRovers.log'                  
  
-*******************************************************************************
+********************************************************************************************
 
 There are some predefined examples that you can try in the folder /src/inputs
 
-******************************************************************************* 
+******************************************************************************************** 
