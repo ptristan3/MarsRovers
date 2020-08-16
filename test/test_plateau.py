@@ -4,8 +4,7 @@ from src.rover import Rover
 from src.position import Position
 from src.plateau import Plateau
 from src.exception_plateau import PlateauInvalidDimmensionException
-from src.p
-osition_interface import PositionInterface
+from src.position_interface import PositionInterface
 from src.rover_interface import Rover_Interface
 from src.exception_position import PositionNotFoundException
 
