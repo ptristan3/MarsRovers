@@ -1,0 +1,59 @@
+
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/main.py",
+        "args": [
+          "${workspaceFolder}/src/input"
+      ],
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "pytest position",
+        "type": "python",
+        "module": "pytest",
+        "args": [
+          "./test/test_position.py"
+      ],
+        "request": "launch",
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "pytest rover",
+        "type": "python",
+        "module": "pytest",
+        "args": [
+          "./test/test_rover.py"
+      ],
+        "request": "launch",
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "pytest plateau",
+        "type": "python",
+        "module": "pytest",
+        "args": [
+          "./test/test_plateau.py"
+      ],
+        "request": "launch",
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "pytest parser",
+        "type": "python",
+        "module": "pytest",
+        "args": [
+          "./test/test_parser_input.py"
+      ],
+        "request": "launch",
+        "console": "integratedTerminal"
+      }
+    ]
+  }
