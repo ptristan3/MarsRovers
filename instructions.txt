@@ -27,4 +27,10 @@ SECOND AND OPTIONAL FLAG -g     => If you want display a graphic in-out
  After running it, you can analyze the traceability of rovers into the 
  plateau just by looking at the file 'marsRovers.log'                  
  
- ******************************************************************************
+*******************************************************************************
+
+In the forlder src/inputs are some differents examples that you can try
+
+******************************************************************************* 
+*******************************************************************************
+*******************************************************************************
