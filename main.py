@@ -1,5 +1,5 @@
 from tkinter import Tk, Canvas, Frame, BOTH
-from src.mars_plateau import Grid_Window
+from src.mars_plateau_UI import Grid_Window
 from src.plateau import Plateau
 from src.position import Position
 from src.rover import Rover

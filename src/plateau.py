@@ -1,7 +1,7 @@
 import logging
 from src.position import Position
 from src.rover import Rover
-from src.exception_position import PositionNotFoundException
+from src.exception_position import PositionNotFoundException, PositionBusyException
 from src.exception_plateau import PlateauInvalidDimmensionException
 
 
@@ -39,13 +39,13 @@ class Plateau:
     def is_busy_position(self, position):
         """
         Return if a position is actually busy for another rover
-        :param postion: position to check
+        :param postion: position to check x and y axis
         """
+        ret = False
         for rover in self.rovers:
             if rover.position == position:
-                return True
-            else:
-                return False
+                ret = True
+        return ret
 
     def is_valid_position(self, current_rover_id, position):
         """
@@ -71,6 +71,8 @@ class Plateau:
         """
         if not self.is_busy_position(rover.position):
             self.rovers.append(rover)
+        #else :
+        #   raise PositionBusyException(rover.position)
 
     def print_position_rover(self, rover):
         """

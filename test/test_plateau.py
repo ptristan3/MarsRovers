@@ -4,7 +4,8 @@ from src.rover import Rover
 from src.position import Position
 from src.plateau import Plateau
 from src.exception_plateau import PlateauInvalidDimmensionException
-from src.position_interface import PositionInterface
+from src.p
+osition_interface import PositionInterface
 from src.rover_interface import Rover_Interface
 from src.exception_position import PositionNotFoundException
 
@@ -145,7 +146,7 @@ class Test_Is_Busy_Position():
 
 
 class Rover_Mock_Rover_For_Run_Ok(Rover_Interface):
-    def __init__(self):
+    def __init__(self):      
         self.process_mission_called = False
 
     def process_mission(self, plateau):
@@ -154,8 +155,7 @@ class Rover_Mock_Rover_For_Run_Ok(Rover_Interface):
 
 class PositionNotFoundException_Mock(Exception):
     def __init__(self):
-        super(PositionNotFoundException_Mock, self).__init__()
-
+      super(PositionNotFoundException_Mock, self).__init__()
 
 class Rover_Mock_Rover_For_Run_Fail(Rover_Interface):
 
@@ -195,7 +195,7 @@ class TestRun():
         rovers.append(test_rover1)
         rovers.append(test_rover2)
         monkeypatch.setattr(test_plateau, 'rovers', rovers)
-        with pytest.raises(PositionNotFoundException_Mock):
+        with pytest.raises(PositionNotFoundException_Mock ):
             test_plateau.run()
         for rover in rovers:
             assert rover.process_mission_called == True
