@@ -5,7 +5,7 @@ from src.position import Position
 from src.plateau import Plateau
 from src.exception_plateau import PlateauInvalidDimmensionException
 from src.position_interface import PositionInterface
-from src.rover_interface import Rover_Interface
+from src.rover_interface import RoverInterface
 from src.exception_position import PositionNotFoundException
 
 ANY_VALUE_TEST_POSITION = 'test_position'
@@ -72,7 +72,7 @@ class Position_Mock_False(PositionInterface):
         return False
 
 
-class Rover_Mock_Rover(Rover_Interface):
+class Rover_Mock_Rover(RoverInterface):
     def __init__(self, id_number, position):
         self.id_number = id_number
         self.position = position
@@ -144,7 +144,7 @@ class Test_Is_Busy_Position():
         assert not test_plateau.is_busy_position(test_position2) == True
 
 
-class Rover_Mock_Rover_For_Run_Ok(Rover_Interface):
+class Rover_Mock_Rover_For_Run_Ok(RoverInterface):
     def __init__(self):      
         self.process_mission_called = False
 
@@ -156,7 +156,7 @@ class PositionNotFoundException_Mock(Exception):
     def __init__(self):
       super(PositionNotFoundException_Mock, self).__init__()
 
-class Rover_Mock_Rover_For_Run_Fail(Rover_Interface):
+class Rover_Mock_Rover_For_Run_Fail(RoverInterface):
 
     def __init__(self):
         self.process_mission_called = False

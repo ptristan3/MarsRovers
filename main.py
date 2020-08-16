@@ -21,7 +21,7 @@ if (len(sys.argv) is 1):
   print ("FLAG -f inputFileName => This file contains the Mars Rover experience")
   print ("   Example ../somelocalpath/MarsRovers/$ python3 -f input.txt        ")
   print ()
-  print ("OPTIONAL FLAG -g         => If you want display a graphic out     ")
+  print ("OPTIONAL FLAG -g      => If you want display a graphic out           ")
   print ("   Example ../somelocalpath/MarsRovers/$ python3 -f input.txt -g     ")
   print ()
   print ("**********************************************************************")
@@ -30,11 +30,12 @@ if (len(sys.argv) is 1):
   print ("plateau just by looking at the file 'marsRovers.log'                  ")
   print ()
   print ("**********************************************************************")
-  
+  logging.info("Running without flags!")
 
 elif (len(sys.argv) is 3):
   if sys.argv[1] == '-f':
     try: 
+      logging.info("Running without UI!")
       mars = parse_input_model_file(sys.argv[2])
       print('The Inicial Position')
       mars.print_position_rovers()
@@ -49,6 +50,7 @@ elif (len(sys.argv) is 3):
 
 elif (len(sys.argv) is 4):   
   if sys.argv[1] == '-f' and sys.argv[3] == '-g':
+    logging.info("Running with UI!")
     try:
         mars = parse_input_model_file(sys.argv[2])
 

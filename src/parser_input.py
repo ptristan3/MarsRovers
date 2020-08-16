@@ -29,16 +29,17 @@ def parse_input_model_file(input_model_file):
         while (len(rovers_data) > 0):
             rover_position_line = rovers_data.pop()
             (x, y, c) = rover_position_line.split()
-            RoverCommands_line = rovers_data.pop().replace('\n', '')
+            rover_commands_line = rovers_data.pop().replace('\n', '')
             try:
-                rover_mission = produce(RoverCommands_line)
+                rover_mission = produce(rover_commands_line)
                 new_rover = Rover(id_rover, Position(x, y, c), rover_mission)
                 logging.info("Rover %s", str(new_rover))
                 if not plateau.is_busy_position(new_rover.position):
                     plateau.add_rover(new_rover)
-                else :
-                    logging.info("Initial Position ( %s ) of Rover %d is busy. Rover not added", new_rover.position, new_rover.id_number)
-                
+                else:
+                    logging.info("Initial Position ( %s ) of Rover %d is busy. Rover not added",
+                                 new_rover.position, new_rover.id_number)
+
                 id_rover += 1
             except (PositionInvalidException, CommandInvalidException) as e:
                 logging.info(

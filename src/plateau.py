@@ -71,8 +71,6 @@ class Plateau:
         """
         if not self.is_busy_position(rover.position):
             self.rovers.append(rover)
-        #else :
-        #   raise PositionBusyException(rover.position)
 
     def print_position_rover(self, rover):
         """

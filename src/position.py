@@ -3,6 +3,7 @@ from src.position_interface import PositionInterface
 
 cardinal_set = {'N': 'North', 'S': 'South', 'W': 'West', 'E': 'East'}
 
+
 class Position(PositionInterface):
     """
     Position of a Rover (x, y, cardinal). 
