@@ -12,15 +12,17 @@ If you don't have please run:
  
  		aptitude install python3-tk
 
+Then run main.py from the root project folder.
+
 *******************************************************************************
                            The basic use             
 *******************************************************************************
 
-FIRST FLAG -f inputFileName     => This file contains the Mars Rover experience
-    Example ../somelocalpath/MarsRovers/$ python3 -f input.txt       
+ 1st FLAG -f inputFileName     => This file contains the Mars Rover experience
+     Example ../somelocalpath/MarsRovers/$ python3 -f input.txt       
  
-SECOND AND OPTIONAL FLAG -g     => If you want display a graphic in-out     
-    Example ../somelocalpath/MarsRovers/$ python3 -f input.txt -g     
+ 2nd and OPTIONAL FLAG -g     => If you want display a graphic in-out     
+     Example ../somelocalpath/MarsRovers/$ python3 -f input.txt -g     
  
  ******************************************************************************
 
