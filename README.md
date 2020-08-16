@@ -30,4 +30,4 @@ OUTPUT The output for each rover should be its final co-ordinates and heading.
 	Test Input: 5 5 1 2 N LMLMLMLMM 3 3 E MMRMMRMRRM
 	Expected Output: 1 3 N 5 1 E
 
-FOR MORE INFORMATION: see [instructions.txt](https://github.com/ptristan3/MarsRovers/blob/master/instructions.txt) 
+FOR MORE INFORMATION ABOUT THE SOLUTION: see [instructions.txt](https://github.com/ptristan3/MarsRovers/blob/master/instructions.txt) 
