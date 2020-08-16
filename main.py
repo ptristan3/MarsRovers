@@ -18,13 +18,19 @@ if (len(sys.argv) is 1):
   print ("                       The basic use of Mars Rovers                  ")
   print ("*********************************************************************")  
   print ()
-  print ("1) flag -f inputFileName    => The file that contains the Mars Rover ")
+  print ("FLAG -f inputFileName => This file contains the Mars Rover experience")
   print ("   Example ../somelocalpath/MarsRovers/$ python3 -f input.txt        ")
   print ()
-  print ("2) Optional flag -g         => If you want display a graphic out     ")
+  print ("OPTIONAL FLAG -g         => If you want display a graphic out     ")
   print ("   Example ../somelocalpath/MarsRovers/$ python3 -f input.txt -g     ")
   print ()
   print ("**********************************************************************")
+  print ()
+  print ("After running it, you can analyze the traceability of rovers into the ")
+  print ("plateau just by looking at the file 'marsRovers.log'                  ")
+  print ()
+  print ("**********************************************************************")
+  
 
 elif (len(sys.argv) is 3):
   if sys.argv[1] == '-f':
