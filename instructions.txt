@@ -35,3 +35,9 @@ In order tu run the GUI you will need to intall the Tkinter library:
 There are some predefined examples that you can try in the folder /src/inputs
 
 ******************************************************************************************** 
+                                    TESTING
+******************************************************************************************** 
+  To run the test please run:
+    ../somelocalpath/MarsRovers/$ python3 -m pytest
+
+********************************************************************************************
