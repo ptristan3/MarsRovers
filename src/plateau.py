@@ -1,7 +1,5 @@
 import logging
-from src.position import Position
-from src.rover import Rover
-from src.exception_position import PositionNotFoundException, PositionBusyException
+from src.exception_position import PositionNotFoundException
 from src.exception_plateau import PlateauInvalidDimmensionException
 
 

@@ -1,4 +1,3 @@
-import logging
 from abc import abstractmethod
 from src.exception_command import CommandInvalidException
 

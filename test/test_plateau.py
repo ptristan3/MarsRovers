@@ -1,12 +1,11 @@
 import pytest
-from collections import namedtuple
 from src.rover import Rover
 from src.position import Position
 from src.plateau import Plateau
 from src.exception_plateau import PlateauInvalidDimmensionException
 from src.position_interface import PositionInterface
 from src.rover_interface import RoverInterface
-from src.exception_position import PositionNotFoundException
+
 
 ANY_VALUE_TEST_POSITION = 'test_position'
 

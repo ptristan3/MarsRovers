@@ -1,9 +1,5 @@
-from test import test_position
 import pytest
 from src.rover import Rover
-from src.command_factory import produce
-from src.position import Position
-from src.exception_position import PositionInvalidException
 
 ANY_VALUE_TEST_ROVER_MISSION = 'test_rover_mission'
 ANY_VALUE_TEST_POSITION = 'test_position'

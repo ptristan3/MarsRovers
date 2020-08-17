@@ -1,4 +1,4 @@
-from src.rover_command import RoverCommand, command_set
+from src.rover_command import command_set
 from src.turn_left_command import TurnLeft
 from src.turn_right_command import TurnRight
 from src.move_forward_command import MoveForward

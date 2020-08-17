@@ -1,4 +1,3 @@
-from src.position import Position
 from src.exception_position import *
 from src.rover_interface import RoverInterface
 import logging

@@ -1,14 +1,8 @@
 import pytest
 from unittest.mock import patch
-from collections import namedtuple
-from src.rover import Rover
-from src.position import Position
-from src.plateau import Plateau
 from src.exception_plateau import PlateauInvalidDimmensionException
-from src.position_interface import PositionInterface
-from src.rover_interface import RoverInterface
 from src.exception_command import CommandInvalidException
-from src.exception_position import PositionNotFoundException, PositionInvalidException, PositionBusyException
+from src.exception_position import PositionInvalidException
 from src.parser_input import parse_input_model_file
 
 
